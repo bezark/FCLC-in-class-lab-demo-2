@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=3 uid="uid://dsf1ktpdrxoq5"]
+
+[ext_resource type="Texture2D" uid="uid://bntosaqi20cqy" path="res://Pictures/icon.svg" id="1_ndm5c"]
+[ext_resource type="PackedScene" uid="uid://cp1bsll6k2t5p" path="res://fall_tree.tscn" id="2_dyivq"]
+
+[node name="Main Scene" type="Node2D"]
+
+[node name="Icon" type="Sprite2D" parent="."]
+modulate = Color(1, 0.929412, 0.14902, 1)
+position = Vector2(642, 475)
+scale = Vector2(1.78125, 1.78125)
+texture = ExtResource("1_ndm5c")
+
+[node name="Icon2" type="Sprite2D" parent="."]
+modulate = Color(1, 0.929412, 0.14902, 1)
+position = Vector2(1732, 418)
+scale = Vector2(1.78125, 1.78125)
+texture = ExtResource("1_ndm5c")
+
+[node name="Forest" type="Node2D" parent="."]
+position = Vector2(51, 697)
+
+[node name="Tree2" parent="Forest" instance=ExtResource("2_dyivq")]
+position = Vector2(910, -18)
+
+[node name="Tree" parent="Forest" instance=ExtResource("2_dyivq")]
+
+[node name="Tree3" parent="Forest" instance=ExtResource("2_dyivq")]
+position = Vector2(410, -31)
