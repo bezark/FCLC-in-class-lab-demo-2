@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://dsf1ktpdrxoq5"]
+[gd_scene load_steps=4 format=3 uid="uid://dsf1ktpdrxoq5"]
 
 [ext_resource type="Texture2D" uid="uid://bntosaqi20cqy" path="res://Pictures/icon.svg" id="1_ndm5c"]
 [ext_resource type="PackedScene" uid="uid://cp1bsll6k2t5p" path="res://fall_tree.tscn" id="2_dyivq"]
+[ext_resource type="PackedScene" uid="uid://b6xxdsfmmrhw3" path="res://spring_tree.tscn" id="3_tqkjr"]
 
 [node name="Main Scene" type="Node2D"]
 
@@ -27,3 +28,6 @@ position = Vector2(910, -18)
 
 [node name="Tree3" parent="Forest" instance=ExtResource("2_dyivq")]
 position = Vector2(410, -31)
+
+[node name="Tree" parent="." instance=ExtResource("3_tqkjr")]
+position = Vector2(264, 658)

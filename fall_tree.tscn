@@ -5,7 +5,7 @@
 [node name="Tree" type="Node2D"]
 
 [node name="Treen" type="Sprite2D" parent="."]
-modulate = Color(0.145098, 0.964706, 0.796078, 1)
+modulate = Color(0.976471, 0.470588, 0.235294, 1)
 position = Vector2(-19.5, -94.2591)
 scale = Vector2(0.0583742, 0.0757927)
 texture = ExtResource("1_ovrdt")
